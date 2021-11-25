@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie index</title>
+    <style>
+          *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,.4)40%,rgba(0,0,0,.4)40%),
+        url("https://wallpapercave.com/wp/wp9128154.jpg") no-repeat center center/ cover;
+        height: 100vh;
+    }
+    .navbar{
+    width: 1330px;
+    height: 75px;  
+    }
+    .search{
+    width: 500px;
+    float: left;
+    height: 70px;
+    }
+    .logo{
+    color:orangered;
+    font-size: 35px;
+    font-family: Arial;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    transition: .1s ease-in-out;
+    }
+    .srch{
+        background: transparent;
+        width: 250px;
+        height: 35px;
+        border: 1px solid orangered;
+        border-right: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: white;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-left: 50px;
+        font-family: Arial;
+        float: left;
+    }
+    .srch:focus{
+        outline: none;
+    }
+    .btn{
+        color: white;
+        background-color:orangered;
+        border-bottom-right-radius: 10px;
+        width: 100px;
+        float: left;
+        height: 35px;
+        margin-top: 15px;
+        border: 2px solid orangered;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial;
+        letter-spacing: .8px;
+    }
+   .menu{
+       width: 300px;
+       float: left;
+       height: 75px;
+   }
+   button:hover{
+       background-color: white;
+       color: black;
+       border-color:white ;
+   }
+   .menu ul{
+       display: flex;
+       margin-top: 23px;
+       margin-left: 220px;
+       list-style: none;
+       font-weight: bold;
+   }     
+   .menu ul a{
+       color: white;
+       font-family: Arial;
+       font-size: 20px;
+       margin-left: 20px;
+       text-decoration: none;
+       transition: .1s ease-in-out;
+   }
+   .menu ul a:hover{
+       color: orangered;
+   }
+   .movie img{
+       width: 335px;
+       height: 430px;
+       margin-left: 30px;
+       margin-top: 30px;
+       border: 1px solid black;
+       display: flex;
+       float: left;
+   }
+   .details{
+       width: 700px;
+       height: 400px;
+       position: absolute;
+       margin-top: 100px;
+   }
+   .details p{
+       margin-top: 20px;
+       margin-left: 400px;
+       color: white;  
+       line-height: 2;
+       font-size: 20px;
+   }
+   .details p b{
+       font-size: 20px;
+       color: orangered;
+   }
+   .details p button{
+       background-color: rgb(6, 233, 6);
+       width: 150px;
+       height: 35px;
+       color: white;
+       border: none;
+       border-radius: 10px;
+   }
+   .details p button:hover{
+       background-color:white;
+       color:black;
+    }
+   
+   .details p button a{
+       color: white;
+       text-decoration: none;
+   }
+   .details p button a:hover{
+       color:black;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <h2 class="logo">BookMyTicket</h2>
+            <div class="search">
+             <input type="search" class="srch" name="" placeholder="search the movie">
+             <a href="#"><button class="btn">Search</button></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="movie">
+                <img src="https://wallpapercave.com/wp/wp6760554.jpg" alt="master poster">
+            </div>
+            <div class="details">
+                <p><b>Name: </b> Master </p>
+                <p><b>Director: </b>Lokesh Kanagaraj</p>
+                <p><b>Production company: </b>XB Film Creators</p>
+                <p><b>Genres: </b>Action/Thriller</p>
+                <p><b>Time : </b>2h 59m</p> 
+                <p><button><a href="listoftheater.html">Book Now</a></button></p>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

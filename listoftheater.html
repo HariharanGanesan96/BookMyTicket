@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of theater</title>
+    <style>
+            *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%; 
+        background: linear-gradient(rgba(0,0,0,.4)40%,rgba(0,0,0,.4)40%),
+        url("https://images.all-free-download.com/images/graphicthumb/nostalgic_blue_background_06_hd_pictures_169782.jpg") no-repeat center center / cover;
+        height: 150vh;
+    }
+    .navbar{
+    width: 1330px;
+    height: 75px;  
+    }
+    .search{
+    width: 500px;
+    float: left;
+    height: 70px;
+    }
+    .logo{
+    color:orangered;
+    font-size: 35px;
+    font-family: Arial;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    transition: .1s ease-in-out;
+    }
+    .srch{
+        background: transparent;
+        width: 250px;
+        height: 35px;
+        border: 1px solid orangered;
+        border-right: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: white;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-left: 50px;
+        font-family: Arial;
+        float: left;
+    }
+    .srch:focus{
+        outline: none;
+    }
+    .btn{
+        color: white;
+        background-color:orangered;
+        border-bottom-right-radius: 10px;
+        width: 100px;
+        float: left;
+        height: 35px;
+        margin-top: 15px;
+        border: 2px solid orangered;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial;
+        letter-spacing: .8px;
+    }
+   .menu{
+       width: 300px;
+       float: left;
+       height: 75px;
+   }
+   button:hover{
+       background-color: white;
+       color: black;
+       border-color:white ;
+   }
+   .menu ul{
+       display: flex;
+       margin-top: 23px;
+       margin-left: 220px;
+       list-style: none;
+       font-weight: bold;
+   }     
+   .menu ul a{
+       color: white;
+       font-family: Arial;
+       font-size: 20px;
+       margin-left: 20px;
+       text-decoration: none;
+       transition: .1s ease-in-out;
+   }
+   .menu ul a:hover{
+       color: orangered;
+   }
+   .content {
+       width: 100%;
+       height: 800px;
+       float: left;
+   }
+   .content div{
+       color: white;
+       margin-top: 10px;
+       line-height: 2;
+       margin-left: 70px;
+       font-size: 18px;
+       font-family: Arial;
+   }
+   .content div h2{
+       font-family: 'Times New Roman';
+       font-size: px;
+       line-height: 2;
+   }
+   .content div span{
+       margin-left: 500px;
+   }
+   .content div input{
+       width: 150px;
+       height: 30px;
+       border-radius: 10px;
+       background: transparent;
+       border: 2px solid  rgb(6, 233, 6);
+       color: white;
+       font-size: 17px;
+   }
+   .time{
+       float: left;
+       position: absolute;
+       margin-left: 750px;
+       margin-top: 195px;
+       font-size: 20px;
+       font-weight: bold;
+   }
+   .time p{
+       line-height: 6;
+   }
+   .time a{
+       border: 1px solid white;
+       padding: 5px;
+       border-radius: 10px;
+       background: transparent;
+       text-decoration: none;
+       background-color: white;
+       margin-left: 30px;
+   }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <h2 class="logo">BookMyTicket</h2>
+            <div class="search">
+             <input type="search" class="srch" name="" placeholder="search the movie">
+             <a href="#"><button class="btn">Search</button></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="login.html">login</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div><h2>Date &ensp;
+                <input type="date" name="date" id="date" min="2021-11-05" max="2021-11-15" value="2021-11-05"></h2>
+                <h2>List of theater & timing</h2>
+               </div> <hr>
+             <!--Theater And Address section-->
+                <div><b >AGS Cinemas Maduravoyal,</b> Rating 4.2 &#11088; <br>
+                 Movie theater 3, 47, Alapakkam Main Rd Modern,<br>
+                 multi-screen movie hall </div>
+                 <hr>
+         
+                <div><b> Malliga Theatre,</b> Rating 4.0 &#11088; <br>
+                 Movie theater shivananda park, <br>
+                 Kunrathur Rd</div>
+                 <hr>
+         
+                <div><b> Kasi Theatre,</b>Rating 4.2 &#11088; <br>
+                  Movie theater <br>
+                  No:91, 92, Jawaharlal Nehru Rd</div>
+                 <hr>
+         
+                <div><b>Inox National Virugambakkam</b>Rating 4.8 &#11088; <br>
+                  (507) · Movie theater <br>
+                  Chandra Metro Mall, 3rd Floor, Arcot Rd</div>
+                  <hr>
+             </div>
+         
+              <!--Timing section-->
+             <div class="time" >
+                 
+                <p> <a href="sheets.html" style="color:green;">09:00AM</a>
+                 <a href="#">12:00PM</a>
+                 <a href="#">02:00PM</a>
+                 <a href="#" style="color: red;">06:00PM</a></p>
+                 
+         
+                <p><a href="#">09:00AM</a>
+                 <a href="#" style="color:green;">12:00PM</a>
+                 <a href="#" style="color: red;"">02:00PM</a>
+                 <a href="#" >06:00PM</a></p>
+                 
+         
+                 <p><a href="#" style="color: red;">09:00AM</a>
+                 <a href="#">12:00PM</a>
+                 <a href="#" style="color:green;">02:00PM</a>
+                 <a href="#">06:00PM</a></p>
+                 
+         
+                 <p><a href="#" >09:00AM</a>
+                 <a href="#">12:00PM</a>
+                 <a href="#" style="color: red;">02:00PM</a>
+                 <a href="#">06:00PM</a></p>
+                 
+             </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

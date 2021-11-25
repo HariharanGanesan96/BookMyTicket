@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,.4)40%,rgba(0,0,0,.4)40%),
+        url("https://wallpaperaccess.com/full/329583.jpg") no-repeat center center/ cover;
+        height: 100vh;
+    }
+    .navbar{
+    width: 1330px;
+    height: 75px;  
+    }
+    .search{
+    width: 500px;
+    float: left;
+    height: 70px;
+    }
+    .logo{
+    color:orangered;
+    font-size: 35px;
+    font-family: Arial;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    transition: .1s ease-in-out;
+    }
+    .srch{
+        background: transparent;
+        width: 250px;
+        height: 35px;
+        border: 1px solid orangered;
+        border-right: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: white;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-left: 50px;
+        font-family: Arial;
+        float: left;
+    }
+    .srch:focus{
+        outline: none;
+    }
+    .btn{
+        color: white;
+        background-color:orangered;
+        border-bottom-right-radius: 10px;
+        width: 100px;
+        float: left;
+        height: 35px;
+        margin-top: 15px;
+        border: 2px solid orangered;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial;
+        letter-spacing: .8px;
+    }
+    .location{
+        width: 150px;
+        height: 35px;
+        float: left;
+    }
+   .location input{
+        width: 130px;
+        height: 35px;
+        background: transparent;
+        font-size: 20px;
+        font-family: Arial;
+        border: 2px solid orangered;
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+   }
+   .location input:focus{
+       outline: none;
+   }
+   .menu{
+       width: 300px;
+       float: left;
+       height: 75px;
+   }
+   .menu ul{
+       display: flex;
+       margin-top: 23px;
+       margin-left: 120px;
+       list-style: none;
+       font-weight: bold;
+   }     
+   .menu ul a{
+       color: white;
+       font-family: Arial;
+       font-size: 20px;
+       margin-left: 20px;
+       text-decoration: none;
+       transition: .1s ease-in-out;
+   }
+   .menu ul a:hover{
+       color: orangered;
+   }
+   .recomend .recmovie{
+       font-family: 'Times New Roman';
+       font-size: 30px;
+       color: white;
+       margin-left: 20px;
+       width: 260px;
+   }
+   table{
+       margin-left: 30px;
+       margin-top: 20px;
+   }
+   table th,td{
+       padding-left: 50px;
+       color: white;
+       font-size: 17px;
+       font-weight: bold;
+   }
+   table img{
+       width: 200px;
+       height: 270px;
+       border: 1px solid black;
+       transition: 1s;
+   }
+   table img:hover{
+    transform: scale(1.2,1.2);
+    padding-bottom: 20px;
+    border: none;
+   }
+   table button{
+       background: transparent;
+       color: white;
+       width: 100px;
+       height: 30px;
+       border: none;
+       background-color: orangered;
+       border-radius: 10px;
+   }
+   table button a{
+       text-decoration: none;
+       color: white;
+   }
+   button:hover{
+       background-color: white;
+       color: black;
+       border-color:white ;
+   }
+   button a:hover{
+       color: black;
+   }
+
+    </style>
+</head>
+<body>
+   <div class="main">
+          <div class="navbar">
+               <h2 class="logo">BookMyTicket</h2>
+               <div class="search">
+                <input type="search" class="srch" placeholder="search the movie">
+                <a href="#"><button class="btn">Search</button></a>
+               </div>
+               <div class="location">
+                   <input type="text" name="location" id="location" placeholder="location" list="locations">
+                   <datalist id="locations">
+                       <option value="Chennai" selected>chennai</option>
+                       <option value="Trichy">Trichy</option>
+                       <option value="Madurai">Madurai</option>
+                       <option value="Ooty">Ooty</option>
+                   </datalist>
+               </div>
+               <div class="menu">
+                   <ul>
+                       <li><a href="index.html">Index</a></li>
+                       <li><a href="login.html">login</a></li>
+                       <li><a href="about.html">About</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+               <div class="recomend">
+                   <h2 class="recmovie">Recommend Movies</h2>
+                   <table>
+                    <thead>
+                        <tr>
+                            <th><a href="movieindex.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGsam55tgPA0g8E4WL097D84Hyi6Iz4hEREg&usqp=CAU" alt="venam"></a> </th>
+                            <th><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1XuFoRu3_dJlrHm-_SkyHbEdzBvKZpWmirwQpMa0cQ4is0H-7vGMUPfKCipB2nN2jys&usqp=CAU" alt="black"></th>
+                            <th><img src="https://dvvy6louqcr7j.cloudfront.net/vista/HO00012357/heroPoster/Free-Guy.png" alt="freeguy" class="size" ></th>
+                            <th><img src="https://i.pinimg.com/originals/03/c0/c2/03c0c2137dd12b0dd65d89c3b2ac2baa.jpg" alt="freeguy" class="size"></th>
+                             <th><img src="https://twhscaledonian.com/wp-content/uploads/2021/09/shang.jpeg" alt="Shang-Chi"></th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>Name: Master</td>
+                            <td>Name: Black widow</td>
+                            <td>Name: Free guy</td>
+                            <td>Name: Robin Hood</td>
+                            <td>Name: Shang-Chi</td>
+                        </tr>
+                        <tr>
+                            <td>Action/Thriller</td>
+                            <td>Action/Adventure</td>
+                            <td>Action/Adventure</td>
+                            <td>Action/Adventure</td>
+                            <td>Action/Fantasy</td>
+                        </tr>
+                        <tr>
+                            <td>2h 59m</td>
+                            <td>2h 13m</td>
+                            <td>1h 56m</td>
+                            <td>1h 56m</td>
+                            <td>2h 12m</td>
+                        </tr>
+                        <tr>
+                             <td>90% liked this film</td>
+                             <td>88% liked this film</td>
+                             <td>92% liked this film55m</td>
+                             <td>77% liked this film</td>
+                             <td>93% liked this film </td>
+                        </tr>
+                        <tr>
+                            <td><button ><a href="listoftheater.html"> Book Now</a></button></td>
+                            <td><button >Book Now</button></td>
+                            <td><button >Book Now</button></td>
+                            <td><button >Book Now</button></td>
+                            <td><button >Book Now</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+               </div>
+            </div>  
+   </div>
+</body>
+</html>
